@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>TEST AIR PROJECT - CRISTIAN DAVID GARCIA CASTAÑO</h1>
+    <form (ngSubmit)="onSearch()">
+      <mat-form-field appearance="fill">
+        <mat-label>Origin</mat-label>
+        <input matInput [(ngModel)]="searchParams.origin" name="origin" required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Destination</mat-label>
+        <input matInput [(ngModel)]="searchParams.destination" name="destination" required />
+      </mat-form-field>
+  
+      <mat-radio-group [(ngModel)]="searchParams.roundtrip" name="roundtrip">
+        <button value="false">Oneway</button>
+        <button value="true">Roundtrip</button>
+      </mat-radio-group>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Currency</mat-label>
+        <mat-select [(ngModel)]="searchParams.currency" name="currency">
+          <mat-option value="USD">USD</mat-option>
+          <mat-option value="EUR">EUR</mat-option>
+          <mat-option value="COP">COP</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit">Search</button>
+    </form>
+  </div>

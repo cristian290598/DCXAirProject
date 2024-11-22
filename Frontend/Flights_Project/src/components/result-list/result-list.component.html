@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>DCX - Results</h1>
+    <ng-container *ngIf="results?.length; else noResults">
+      <div *ngFor="let journey of results" class="card">
+        <h2>{{ journey.origin }} - {{ journey.destination }}</h2>
+        <p>Price: {{ journey.price }} {{ currency }}</p>
+        <div class="flights">
+          <div *ngFor="let flight of journey.flights">
+            <p>
+              {{ flight.origin }} - {{ flight.destination }} <br />
+              {{ flight.price }} {{ currency }} <br />
+              {{ flight.transport.flightCarrier }} - {{ flight.transport.flightNumber }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+    <ng-template #noResults>
+      <p>No results found.</p>
+    </ng-template>
+  </div>
