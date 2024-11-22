@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Flights.DTO\Flights.DTO.csproj" />
+    <ProjectReference Include="..\Flights.Model\Flights.Model.csproj" />
+  </ItemGroup>
+
+</Project>
