@@ -7,12 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="App.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Flights.BLL\Flights.BLL.csproj" />
-    <ProjectReference Include="..\Flights.DTO\Flights.DTO.csproj" />
     <ProjectReference Include="..\Flights.IOC\Flights.IOC.csproj" />
   </ItemGroup>
 
