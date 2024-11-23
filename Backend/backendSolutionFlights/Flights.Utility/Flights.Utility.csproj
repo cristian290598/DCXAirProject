@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Flights.DTO\Flights.DTO.csproj" />
     <ProjectReference Include="..\Flights.Model\Flights.Model.csproj" />
   </ItemGroup>
 

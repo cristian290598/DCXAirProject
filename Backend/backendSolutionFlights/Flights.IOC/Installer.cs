@@ -12,6 +12,7 @@
         {
             services.AddScoped<IDataAccess, SqlDataAccess>();
             services.AddScoped<IGetJourneysService, GetJourneyService>();
+            services.AddScoped<IExchangeCurrency, ExchangeCurrency>();
         }
     }
 }
